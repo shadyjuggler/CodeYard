@@ -1,0 +1,40 @@
+.welcomeScenario {
+    position: fixed;
+    background-color: black;
+    opacity: .3;
+    left: 50%;
+    top: 0;
+
+
+    width: 130vw;
+    height: 180vh;
+    border-radius: 40%;
+    translate: -50% -15%;
+
+    animation: radialAppear .6s ease-in-out;
+
+    // z-index: 120;
+}
+
+.welcomeGuideLine {
+    background-color: $accent;
+    width: 200px;
+    height: 75px;
+}
+
+@keyframes radialAppear {
+    0% {
+        width: 100px;
+        height: 100px;
+        translate: -50% -50%;
+
+        border-radius: 50%;
+    }
+
+    100% {
+        width: 130vw;
+        height: 180vh;
+        border-radius: 40%;
+        translate: -50% -15%;
+    }
+}

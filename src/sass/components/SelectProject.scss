@@ -1,0 +1,67 @@
+.selectProject {
+    padding: 40px 0px;
+
+    &-noProjects {
+        text-align: left;
+        margin-right: auto;
+    }
+
+    .selectProject-wrapper.no-projects {
+        padding-bottom: 34px;
+    }
+
+    .selectProject-wrapper {
+        position: relative;
+
+        margin-top: 30px;
+        background-color: $gray;
+        border-radius: 15px;
+        padding: 34px 90px;
+        padding-bottom: 100px;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 75px;
+        row-gap: 30px;
+
+        &-addProject {
+            cursor: pointer;
+
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+
+            width: 50px;
+            height: 50px;
+            padding-right: 10px;
+            background-color: $accent;
+            border-radius: 30px;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            transition: width .2s ease-in;
+            transition-delay: .1s;
+
+            p {
+                white-space: nowrap;
+                position: absolute;
+                left: 10px;
+                font-size: 0;
+                opacity: 0;
+            }
+
+            &:hover {
+                width: 170px;
+
+                p {
+                    font-size: 16px;
+                    animation: lazyPopIn .4s;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

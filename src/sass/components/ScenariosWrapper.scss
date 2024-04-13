@@ -1,0 +1,10 @@
+.scenariosWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.scenariosWrapper-active {
+    z-index: 100;
+}

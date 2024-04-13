@@ -1,0 +1,54 @@
+@keyframes lazyPopIn {
+    0% {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+    75% {
+        opacity: 0;
+        pointer-events: none;
+
+    }
+    100% {
+        opacity: 1;
+        pointer-events: auto;
+
+    }
+}
+
+@keyframes menuIconPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes tinyPusle {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.015);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lazyPointerEvent {
+    0% {
+        pointer-events: none;
+    }
+    100% {
+        pointer-events: auto;
+    }
+}

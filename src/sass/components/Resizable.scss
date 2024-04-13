@@ -1,0 +1,30 @@
+.react-resizable-handle {
+    background-color: $accent;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: .3;
+
+    transition: opacity .1s ease-in;
+    &:active {
+        opacity: 1;
+    }
+}
+
+.resize-horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.react-resizable-handle-s {
+    height: 5px;
+    width: 100%;
+    cursor: row-resize;
+}
+
+.react-resizable-handle-e {
+    width: 5px;
+    min-width: 5px;
+    height: 100%;
+    cursor: col-resize;
+}

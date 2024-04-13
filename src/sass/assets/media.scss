@@ -1,0 +1,250 @@
+@media (max-width: 1024px) {
+    .container {
+        .selectProject {
+            .selectProject-wrapper {
+                padding: 34px 20px;
+            }
+
+            .selectProject-wrapper-addProject {
+                bottom: 0px;
+                top: -80px;
+                right: 10px;
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        .navbar-username {
+            display: none!important;
+        }
+    }
+    .container {
+        .selectProject {
+            .selectProject-wrapper {
+                .project {
+                    .projectOverlay {
+                        display: none;
+                    }
+                }
+
+                .selectProject-wrapper-addProject {
+                    &:hover {
+                        width: 50px;
+
+                        p {
+                            font-size: 0;
+                            animation: none;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .cell-list {
+            .AddCell {
+                margin: 20px;
+                opacity: 0.6;
+            }
+           
+            .CellListItem {
+                .action-bar {
+                    padding: 4px 13px;
+                    opacity: .6;
+                    &:hover {
+                        padding: 3px 13px;
+                        opacity: 1;
+                    }
+                }
+                .editor-wrapper {
+                    width: 100%;
+                    height: calc(100% - 5px);
+                }
+                .react-resizable-handle {
+                    opacity: .6;
+                }
+            }
+
+            .ProjectActionBar {
+                left: 50%;
+                translate: -50% 0%;
+                bottom: 10px;
+            }
+        }
+
+        .Profile {
+            .Profile-main {
+                margin-top: 60px;
+                position: relative;
+                flex-direction: column-reverse;
+                align-items: center;
+
+                .Profile-content {
+                    max-width: 100%;
+                }
+
+                .Profile-forms {
+                    max-width: 100%;
+                    width: 100%;
+                }
+
+                .Profile-settingWrapper {
+                    position: absolute;
+                    transform: scaleX(-1);
+                    right: 15px;
+                    top: -110px;
+
+                    .Profile-setting {
+                        .Profile-menu {
+                            left: 30px;
+                        }
+
+                        .Profile-link {
+                            transform: scaleX(-1);
+                        }
+
+                        &:hover {
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .manual {
+            p {
+                text-align: center;
+            }
+
+            p.semibold {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .notificationWrapper {
+        bottom: auto !important;
+        top: -5px;
+        right: 50% !important;
+        translate: 50% 0%;
+
+        .notification {
+            transform: translateX(0%);
+            transform: translateY(-120%);
+        }
+
+        .notification--appear {
+            transform: translateY(0%);
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        .navbar-wrapper {
+            .menu:hover {
+                width: 150px;
+            }
+        }
+    }
+
+    .container {
+        h1.title {
+            text-align: center;
+        }
+
+        .startForm {
+
+            .startForm-title,
+            .startForm-descr {
+                display: none;
+            }
+
+            .regLogForm {
+                margin-top: 0;
+            }
+
+        }
+
+        .cell-list {
+            .project-title  {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+            .AddCell-buttons {
+                gap: 25px;
+            }
+        }
+
+        .selectProject {
+            .selectProject-wrapper {
+                padding: 0px;
+                margin-top: 70px;
+                background-color: transparent;
+            }
+
+            .selectProject-wrapper.no-projects {
+                p {
+                    margin: 0 auto;
+                }
+            }
+
+            .selectProject-wrapper-addProject {
+                width: 40px;
+                height: 40px;
+                top: -60px;
+                right: 50%;
+                translate: 50% 0%;
+                padding-right: 9px;
+
+                &:hover {
+                    width: 40px!important;
+                }
+
+                i {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .Profile {
+            .Profile-main {
+                margin-top: 90px;
+
+                .Profile-content {
+                    padding: 10px;
+                    background-color: transparent;
+                }
+
+                .Profile-settingWrapper {
+                    right: 50%;
+                    translate: 50% 0%;
+                    top: -90px;
+
+                    .Profile-setting {
+                        padding: 8px;
+                        padding-right: 7px;
+                        padding-left: 10px;
+                        width: 40px;
+                        height: 40px;
+
+                        i {
+                            font-size: 18px;
+                        }
+
+                        &:hover {
+                            height: 100px;
+                            width: 170px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

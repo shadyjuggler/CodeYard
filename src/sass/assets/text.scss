@@ -1,0 +1,31 @@
+.semi {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.semibold {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title {
+    color: $accent;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tiny {
+    color: white;
+    font-size: 14px;
+}
+
+.accentText {
+    color: $accent;
+}

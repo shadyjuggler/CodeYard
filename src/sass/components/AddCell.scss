@@ -1,0 +1,30 @@
+.AddCell {
+    position: relative;
+    opacity: 0;
+    transition: opacity .3s ease-in .1s;
+    margin: 8px 0;
+}
+
+.AddCell.force-visible {
+    opacity: 1;
+}
+
+.AddCell:hover {
+    opacity: 1;
+}
+
+.AddCell .AddCell-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    button {
+        cursor: pointer;
+        background-color: $accent;
+        border: none;
+        padding: 3px 10px;
+        border-radius: 5px;
+        display: flex;
+        gap: 5px;
+    }
+}
+

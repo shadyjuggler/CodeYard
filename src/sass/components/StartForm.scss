@@ -1,0 +1,73 @@
+.startForm {
+    max-width: 415px;
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-descr {
+        font-size: 18px;
+    }
+}
+
+.regLogForm {
+    margin-top: 50px;
+    background-color: $gray;
+    border-radius: 15px;
+    padding: 20px 22px;
+    padding-bottom: 15px;
+
+    .fromField {
+        margin-top: 20px;
+    }
+
+    &-title {
+        color: $accent;
+        font-size: 24px;
+    }
+
+    &-subtitle {
+        font-size: 20px;
+    }
+
+    &-guestMode {
+        margin-top: 15px;
+        text-align: center;
+
+        #guestLink {
+            cursor: pointer;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+
+        button {
+            transition: width .3s ease-in;
+            transition-delay: .1s;
+        }
+    }
+
+    &-regBtn {
+        width: 70%;
+    }
+
+    &-logBtn {
+        width: 30%;
+
+        &:hover {
+            width: 70%;
+        }
+    }
+
+}

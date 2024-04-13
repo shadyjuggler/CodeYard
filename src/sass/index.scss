@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap');
+@import 'assets';
+@import 'components';
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: $white;
+}
+
+html, body, #root {
+    // background-color: $dark;
+    height: 100%;
+}
+
+body {
+    background-image: url("./img/pattern_waves-20_1_2_0-0_0_1__2e3352_f1a46a17.png");
+}
+
+
+ul,li {
+    list-style: none;
+}
+
+a {
+    -webkit-appearance: none;
+    appearance: nonoe;
+    text-decoration: none;
+}
+
+#root {
+    position: relative;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    font-size: 24px;
+}

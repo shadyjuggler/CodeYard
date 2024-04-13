@@ -1,0 +1,52 @@
+.notificationWrapper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    overflow: hidden;
+
+    z-index: 60;
+}
+
+.notification {
+    width: 200px;
+    min-height: 65px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    color: white;
+
+    transform: translateX(110%);
+    transition: transform .150s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+    &__text {
+        word-wrap: break-word;
+        text-align: center;
+        letter-spacing: .5px;
+    }
+}
+
+.notification--appear {
+    transform: translateX(0%);
+}
+
+.notification.notification--success {
+    background-color: $accent;
+    border: 2px solid white;
+}
+.notification.notification--warning {
+    background-color: $lightgray;
+    border: 2px solid $accent;
+}
+.notification.notification--error {
+    background-color: $error;
+    border: 2px solid white;
+}
